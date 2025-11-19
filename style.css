@@ -1,0 +1,90 @@
+/* 页面整体背景和样式 */
+body {
+    font-family: 'Arial', sans-serif;
+    background: #000; /* 设置背景为黑色 */
+    color: white;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+h1 {
+    font-size: 4rem;
+    color: #ffcc00;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.8); /* 文字阴影 */
+    animation: slideIn 3s ease-out;
+}
+
+.message {
+    font-size: 1.8rem;
+    margin-top: 20px;
+    color: #f8f9fa;
+    animation: fadeIn 4s ease-out;
+}
+
+.button {
+    background-color: #ff4c8d;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-top: 40px;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: #d63384;
+    transform: scale(1.1);
+}
+
+/* 标题的动画效果 */
+@keyframes slideIn {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+/* 文字淡入动画 */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+/* 倒计时样式 */
+.countdown {
+    font-size: 2rem;
+    color: #f8f9fa;
+    margin-top: 30px;
+    animation: fadeIn 5s ease-out;
+}
+
+/* 粒子背景效果 */
+.particle {
+    position: absolute;
+    border-radius: 50%;
+    background-color: #ffcc00;
+    opacity: 0.7;
+    animation: particleAnimation 5s infinite;
+}
+
+/* 粒子动画 */
+@keyframes particleAnimation {
+    0% {
+        transform: translate(0, 0);
+        opacity: 1;
+    }
+    100% {
+        transform: translate(var(--x), var(--y));
+        opacity: 0;
+    }
+}

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>生日快乐，李紫菥！</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>生日快乐，李紫菥！</h1>
+
+    <div class="message">
+        <p id="birthdayMessage">愿你在高三的奋斗中取得辉煌的成绩！</p>
+        <p>祝你每一天都充满阳光和笑容！🎂🎉</p>
+    </div>
+
+    <div class="countdown" id="countdown"></div> <!-- 显示倒计时 -->
+
+    <button class="button" onclick="showWish()">点击祝福</button>
+
+    <button class="button" onclick="changeMessage()">切换祝福语</button>
+
+    <!-- 音效 -->
+    <audio id="birthdayAudio">
+        <source src="happy_birthday.mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+    </audio>
+
+    <!-- 粒子背景效果 -->
+    <div id="particles"></div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
